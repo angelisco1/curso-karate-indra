@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/ejemplos\/01-introduccion[1:9]","start":1780484506192,"end":1780484506297,"title":"examples\/ejemplos\/01-introduccion[1:9] 13:01:46.192-13:01:46.297 Hola mundo"},{"id":2,"group":2,"content":"examples\/ejemplos\/01-introduccion[2:14]","start":1780484506192,"end":1780484506297,"title":"examples\/ejemplos\/01-introduccion[2:14] 13:01:46.192-13:01:46.297 Hola mundo con el logger"},{"id":3,"group":3,"content":"examples\/ejemplos\/01-introduccion[3:19]","start":1780484506192,"end":1780484506301,"title":"examples\/ejemplos\/01-introduccion[3:19] 13:01:46.192-13:01:46.301 Traza de error"},{"id":4,"group":4,"content":"examples\/ejemplos\/01-introduccion[4:24]","start":1780484506192,"end":1780484506303,"title":"examples\/ejemplos\/01-introduccion[4:24] 13:01:46.192-13:01:46.303 Traza de warning y debug"},{"id":5,"group":5,"content":"examples\/ejemplos\/01-introduccion[5:36]","start":1780484506192,"end":1780484506322,"title":"examples\/ejemplos\/01-introduccion[5:36] 13:01:46.192-13:01:46.322 Variables"},{"id":6,"group":1,"content":"examples\/ejemplos\/01-introduccion[6:56]","start":1780484506302,"end":1780484506307,"title":"examples\/ejemplos\/01-introduccion[6:56] 13:01:46.302-13:01:46.307 Usar variable de Background"},{"id":7,"group":2,"content":"examples\/ejemplos\/01-introduccion[7:67]","start":1780484506303,"end":1780484506320,"title":"examples\/ejemplos\/01-introduccion[7:67] 13:01:46.303-13:01:46.320 Validar XML"},{"id":8,"group":3,"content":"examples\/ejemplos\/01-introduccion[8:79]","start":1780484506304,"end":1780484506323,"title":"examples\/ejemplos\/01-introduccion[8:79] 13:01:46.304-13:01:46.323 Marcadores de tipos"},{"id":9,"group":4,"content":"examples\/ejemplos\/01-introduccion[9:103]","start":1780484506307,"end":1780484506320,"title":"examples\/ejemplos\/01-introduccion[9:103] 13:01:46.307-13:01:46.320 Marcadores de predicados"},{"id":10,"group":1,"content":"examples\/ejemplos\/01-introduccion[10:109]","start":1780484506310,"end":1780484506313,"title":"examples\/ejemplos\/01-introduccion[10:109] 13:01:46.310-13:01:46.313 Marcador de regexp"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

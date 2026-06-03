@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "titulo": "Python",
+    "precio": 150
+  },
+  {
+    "id": 2,
+    "titulo": "Node JS",
+    "precio": 165.50
+  },
+  {
+    "id": 3,
+    "titulo": "Claude",
+    "precio": 350.95
+  }
+]
