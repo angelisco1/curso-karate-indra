@@ -1,0 +1,100 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "cfalco@gmail.com",
+      "password": "$2a$10$5ZV2JbyljB0z59m4T/6mX.OdpG3qmfkE5Dos8XmxW7THj7NWoscLm",
+      "nombre": "Charly Falco",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "email": "mike.kozinski@gmail.com",
+      "password": "$2a$10$qBo/YoIvSJpK1vIRphGaOOlBC3uoyEPEmFHp2iJGAn4rsypOxY89S",
+      "nombre": "Mike Kozinski",
+      "rol": "user"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Drone plegable",
+      "precio": 299.99,
+      "imageUrl": "",
+      "stock": 6,
+      "categorias": ["drones", "electrónica"]
+    },
+    {
+      "id": 2,
+      "nombre": "Gafas de realidad virtual",
+      "precio": 199.99,
+      "imageUrl": "",
+      "stock": 10,
+      "categorias": ["realidad-virtual", "accesorios"]
+    },
+    {
+      "id": 3,
+      "nombre": "Auriculares inalámbricos",
+      "precio": 59.99,
+      "imageUrl": "",
+      "stock": 25,
+      "categorias": ["audio", "accesorios"]
+    },
+    {
+      "id": 4,
+      "nombre": "Smartwatch",
+      "precio": 129.99,
+      "imageUrl": "",
+      "stock": 15,
+      "categorias": ["wearables", "accesorios"]
+    },
+    {
+      "id": 5,
+      "nombre": "Altavoz Bluetooth portátil",
+      "precio": 39.99,
+      "imageUrl": "",
+      "stock": 30,
+      "categorias": ["audio", "portátil"]
+    },
+    {
+      "id": 6,
+      "nombre": "Cámara de acción 4K",
+      "precio": 199.99,
+      "imageUrl": "",
+      "stock": 8,
+      "categorias": ["cámaras", "video"]
+    },
+    {
+      "id": 7,
+      "nombre": "Cargador USB-C 65W",
+      "precio": 29.99,
+      "imageUrl": "",
+      "stock": 50,
+      "categorias": ["accesorios", "cargadores"]
+    },
+    {
+      "id": 8,
+      "nombre": "Ratón inalámbrico",
+      "precio": 24.99,
+      "imageUrl": "",
+      "stock": 40,
+      "categorias": ["periféricos", "computación"]
+    },
+    {
+      "id": 9,
+      "nombre": "Teclado mecánico compacto",
+      "precio": 89.99,
+      "imageUrl": "",
+      "stock": 12,
+      "categorias": ["periféricos", "computación"]
+    },
+    {
+      "id": 10,
+      "nombre": "Tablet 10 pulgadas",
+      "precio": 249.99,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": ["tablets", "computación"]
+    }
+  ]
+}

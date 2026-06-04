@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "nombre": "Charles Falco",
+    "email": "falco@atf.gov",
+    "edad": 55,
+    "activo": false,
+    "organizaciones": [
+      "Vagos MC",
+      "Mongols MC"
+    ],
+    "añosServicio": 3,
+    "agencia": "ATF",
+    "identidadEncubierta": "Charles Falco",
+    "casosPrincipales": [
+      "Operación 22 Green"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Joseph Pistone",
+    "email": "pistone@fbi.gov",
+    "edad": 85,
+    "activo": false,
+    "organizaciones": [
+      "Bonanno Crime Family",
+      "Colombo Crime Family"
+    ],
+    "añosServicio": 6,
+    "agencia": "FBI",
+    "identidadEncubierta": "Donnie Brasco",
+    "casosPrincipales": [
+      "Infiltración Mafia NYC"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "William Queen",
+    "email": "queen@atf.gov",
+    "edad": 70,
+    "activo": false,
+    "organizaciones": [
+      "Mongols MC"
+    ],
+    "añosServicio": 2,
+    "agencia": "ATF",
+    "identidadEncubierta": "Billy St. John",
+    "casosPrincipales": [
+      "Operación Black Rain"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Jay Dobyns",
+    "email": "dobyns@atf.gov",
+    "edad": 60,
+    "activo": true,
+    "organizaciones": [
+      "Hells Angels MC",
+      "Solo Angeles"
+    ],
+    "añosServicio": 4,
+    "agencia": "ATF",
+    "identidadEncubierta": "Jay Bird Davis",
+    "casosPrincipales": [
+      "Operación Black Biscuit"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Alex Caine",
+    "email": "caine@rcmp.ca",
+    "edad": 65,
+    "activo": false,
+    "organizaciones": [
+      "Hells Angels MC",
+      "Bandidos MC",
+      "Rock Machine"
+    ],
+    "añosServicio": 5,
+    "agencia": "RCMP",
+    "identidadEncubierta": "Alex Atwell",
+    "casosPrincipales": [
+      "Operación Springtime",
+      "Operación Amigo"
+    ]
+  }
+]

@@ -27,11 +27,11 @@ Feature: Introducción
     * def token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30'
     * karate.logger.debug("Token: " + token)
 
-
     # ERROR
     # WARN
     # INFO
     # DEBUG
+    
 
   Scenario: Variables
     Given def nombre = 'Charly'
@@ -46,11 +46,13 @@ Feature: Introducción
     And match usuario.edad == 39
     And match usuario.nombreCompleto == 'Charly Falco'
     # And match hobbies.length == 3
+    # And match parseInt(hobbies.length) == 3
     And assert hobbies.length == 3
     And assert usuario.activo == false
     And match usuario.activo == false
     And match usuario.hobbies == ['leer', 'motos', 'escalada']
     And match karate.typeOf(usuario.activo) == 'boolean'
+    # And match karate.sizeOf(usuario.hobbies) == 3
 
 
   Scenario: Usar variable de Background
@@ -96,7 +98,7 @@ Feature: Introducción
     And match direccion == '#object'
     And match direccion.calle == '#present'
     And match direccion.pais == '#notpresent'
-    # And match direccion == {calle '#string', numero '#number', ciudad: '#string'}
+    And match direccion == {calle: '#string', numero: '#number', ciudad: '#string'}
     And match edad == '#notnull'
     And match telefonoFijo == '#null'
 
