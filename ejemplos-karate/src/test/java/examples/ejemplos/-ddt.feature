@@ -1,0 +1,1 @@
+# Usar el de los saludos con traduccion
