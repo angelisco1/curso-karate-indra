@@ -1,0 +1,6 @@
+{
+  "nombre": "#string",
+  "email": "#regex ^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]{2,4}$",
+  "timestamp": "#number",
+  "id": "#number"
+}

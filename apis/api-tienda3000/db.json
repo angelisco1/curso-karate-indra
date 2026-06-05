@@ -22,7 +22,10 @@
       "precio": 299.99,
       "imageUrl": "",
       "stock": 6,
-      "categorias": ["drones", "electrónica"]
+      "categorias": [
+        "drones",
+        "electrónica"
+      ]
     },
     {
       "id": 2,
@@ -30,7 +33,10 @@
       "precio": 199.99,
       "imageUrl": "",
       "stock": 10,
-      "categorias": ["realidad-virtual", "accesorios"]
+      "categorias": [
+        "realidad-virtual",
+        "accesorios"
+      ]
     },
     {
       "id": 3,
@@ -38,15 +44,21 @@
       "precio": 59.99,
       "imageUrl": "",
       "stock": 25,
-      "categorias": ["audio", "accesorios"]
+      "categorias": [
+        "audio",
+        "accesorios"
+      ]
     },
     {
       "id": 4,
       "nombre": "Smartwatch",
-      "precio": 129.99,
+      "precio": 189.99,
       "imageUrl": "",
       "stock": 15,
-      "categorias": ["wearables", "accesorios"]
+      "categorias": [
+        "wearables",
+        "accesorios"
+      ]
     },
     {
       "id": 5,
@@ -54,7 +66,10 @@
       "precio": 39.99,
       "imageUrl": "",
       "stock": 30,
-      "categorias": ["audio", "portátil"]
+      "categorias": [
+        "audio",
+        "portátil"
+      ]
     },
     {
       "id": 6,
@@ -62,7 +77,10 @@
       "precio": 199.99,
       "imageUrl": "",
       "stock": 8,
-      "categorias": ["cámaras", "video"]
+      "categorias": [
+        "cámaras",
+        "video"
+      ]
     },
     {
       "id": 7,
@@ -70,7 +88,10 @@
       "precio": 29.99,
       "imageUrl": "",
       "stock": 50,
-      "categorias": ["accesorios", "cargadores"]
+      "categorias": [
+        "accesorios",
+        "cargadores"
+      ]
     },
     {
       "id": 8,
@@ -78,7 +99,10 @@
       "precio": 24.99,
       "imageUrl": "",
       "stock": 40,
-      "categorias": ["periféricos", "computación"]
+      "categorias": [
+        "periféricos",
+        "computación"
+      ]
     },
     {
       "id": 9,
@@ -86,7 +110,10 @@
       "precio": 89.99,
       "imageUrl": "",
       "stock": 12,
-      "categorias": ["periféricos", "computación"]
+      "categorias": [
+        "periféricos",
+        "computación"
+      ]
     },
     {
       "id": 10,
@@ -94,7 +121,109 @@
       "precio": 249.99,
       "imageUrl": "",
       "stock": 7,
-      "categorias": ["tablets", "computación"]
+      "categorias": [
+        "tablets",
+        "computación"
+      ]
+    },
+    {
+      "nombre": "Tablet 13 pulgadas",
+      "precio": 249.99,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 11
+    },
+    {
+      "nombre": "Tablet 13 pulgadas",
+      "precio": 249.99,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 12
+    },
+    {
+      "nombre": "Tablet 13 pulgadas",
+      "precio": 249.99,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 13
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 14
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 16
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 18
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 19
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 20
+    },
+    {
+      "nombre": "Xiaomi TV",
+      "precio": 60,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ],
+      "id": 21
     }
   ]
 }

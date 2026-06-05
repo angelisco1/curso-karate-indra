@@ -1,0 +1,12 @@
+{
+  "id": "#number",
+  "nombre": "#string",
+  "email": "#string",
+  "edad": "#number",
+  "activo": "#boolean",
+  "organizaciones": "#[] #string",
+  "añosServicio": "#number",
+  "agencia": "#string",
+  "identidadEncubierta": "#string",
+  "casosPrincipales": "#array"
+}

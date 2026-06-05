@@ -3,8 +3,10 @@ Feature: Peticiones HTTP
   Background:
     * def urlApiSaludos = 'http://localhost:4001'
     * def urlTypicode = 'https://jsonplaceholder.typicode.com'
-    * def urlTienda3000 = 'http://localhost:3333'
-    * def tokenTienda3000 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJjZmFsY29AZ21haWwuY29tIiwicm9sIjoiYWRtaW4iLCJpYXQiOjE3ODA2NTAxNjUsImV4cCI6MTc4MDY1Mzc2NX0.ev-ogL4tmC_t4y3RBPGRdCp8s4Pgqlm4tw8362UOGho"
+    * def urlTienda3333 = 'http://localhost:3333'
+    * def urlTienda3000 = 'http://localhost:3000'
+    * def tokenTienda3000 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJjZmFsY29AZ21haWwuY29tIiwicm9sIjoiYWRtaW4iLCJpYXQiOjE3ODA2NTM4NjgsImV4cCI6MTc4MDY1NzQ2OH0.zzwkfPTC8WwirG0qrEHc94o4aH3j_Rc9Iu2Ejgk9yF0"
+    * def tokenTienda3000Caducado = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJjZmFsY29AZ21haWwuY29tIiwicm9sIjoiYWRtaW4iLCJpYXQiOjE3ODA2NTAxNjUsImV4cCI6MTc4MDY1Mzc2NX0.ev-ogL4tmC_t4y3RBPGRdCp8s4Pgqlm4tw8362UOGho"
 
   Scenario: Get - Hola mundo
     # url -> definimos la url a la que hacer la petición
@@ -110,7 +112,7 @@ Feature: Peticiones HTTP
 
 
   Scenario: Get token
-    Given url urlTienda3000
+    Given url urlTienda3333
     And path 'auth/login'
     And request
     """
@@ -126,7 +128,7 @@ Feature: Peticiones HTTP
     And match response.user == { id: '#number', email: '#string', nombre: '#string', rol: '#string' }
 
   Scenario: Hay 4 productos de la categoria accesorios
-    Given url urlTienda3000
+    Given url urlTienda3333
     And path 'productos'
     And header Authorization = "Bearer " + tokenTienda3000
     And param categorias_like = "accesorios"
@@ -137,3 +139,60 @@ Feature: Peticiones HTTP
     And karate.log('Categorias: ', categorias)
     And match each categorias contains 'accesorios'
 
+
+  Scenario: Actualizar smartwatch a 189.99
+    Given url urlTienda3000
+    And path 'productos', 4
+    And header Authorization = "Bearer " + tokenTienda3000
+    And header Content-Type = 'application/json'
+    And request { precio: 189.99 }
+    When method PATCH
+    # When method PUT
+    Then status 200
+    And response.precio == 189.99
+
+
+  Scenario: Crear y eliminar un producto
+    Given url urlTienda3000
+    And path 'productos'
+    And header Content-Type = 'application/json'
+    And request
+    """
+    {
+      "nombre": "Tablet 13 pulgadas",
+      "precio": 249.99,
+      "imageUrl": "",
+      "stock": 7,
+      "categorias": [
+        "tablets",
+        "computación"
+      ]
+    }
+    """
+    When method POST
+    Then status 201
+    And def productoId = response.id
+    And karate.log("Producto creado: ", response)
+
+
+    Given url urlTienda3000
+    And path 'productos', productoId
+    When method DELETE
+    Then status 200
+
+  
+  Scenario: Si enviamos un token caducado, nos devuelve un error
+    Given url urlTienda3333
+    And path 'productos'
+    And header Authorization = "Bearer " + tokenTienda3000Caducado
+    When method GET
+    Then status 401
+    And match response.message == 'Token inválido'
+  
+  
+  Scenario: Si no enviamos un token, nos devuelve un error
+    Given url urlTienda3333
+    And path 'productos'
+    When method GET
+    Then status 401
+    And match response.message == 'Token requerido'

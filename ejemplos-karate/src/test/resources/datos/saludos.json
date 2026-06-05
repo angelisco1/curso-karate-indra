@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Ángel",
+    "idioma": "en",
+    "resultado": "Hello Ángel!"
+  },
+  {
+    "nombre": "Charly",
+    "idioma": "fr",
+    "resultado": "Bonjour Charly!"
+  },
+  {
+    "nombre": "Paco",
+    "idioma": "de",
+    "resultado": "Hallo Paco!"
+  }
+]

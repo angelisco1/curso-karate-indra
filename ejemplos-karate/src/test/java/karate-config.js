@@ -6,7 +6,9 @@ function fn() {
   }
   var config = {
     env: env,
-    urlAPI2: 'https://jsonplaceholder.typicode.com/'
+    urlAPI2: 'https://jsonplaceholder.typicode.com/',
+    urlTienda3000: 'http://localhost:3000',
+    urlTienda3333: 'http://localhost:3333',
   }
   if (env == 'dev') {
     // customize
