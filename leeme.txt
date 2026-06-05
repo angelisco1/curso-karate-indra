@@ -1,0 +1,27 @@
+Para arrancar los proyectos:
+
+- api-saludar:
+-- Entramos en la carpeta y lanzamos los siguientes comandos:
+--- npm install
+--- npm start
+
+- api-tienda3000:
+-- Entramos en la carpeta y lanzamos los siguientes comandos:
+--- npm install
+--- npm start
+-- Si necesitamos la versión sin autenticación entonces el comando a lanzar es:
+--- npm run serve
+
+
+- EJERCICIO/cursos-3000-api:
+-- Entramos en la carpeta y lanzamos los siguientes comandos:
+--- npm install
+--- npm start
+- EJERCICIO/pagalo3000-api:
+-- Entramos en la carpeta y lanzamos los siguientes comandos:
+--- npm install
+--- npm start
+
+
+Repositorio con el workflow de github actions y un test:
+- https://github.com/angelisco1/curso-karate-indra-para-gh
